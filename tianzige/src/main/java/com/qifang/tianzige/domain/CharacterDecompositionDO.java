@@ -15,6 +15,19 @@ public class CharacterDecompositionDO {
 	private String									composition;
 	private LinkedList<CharacterDecompositionDO>	components;
 
+	public CharacterDecompositionDO() {
+	}
+
+	public CharacterDecompositionDO(String word) {
+		this.word = word;
+	}
+
+	public CharacterDecompositionDO(String word, String composition, LinkedList<CharacterDecompositionDO> components) {
+		this.word = word;
+		this.composition = composition;
+		this.components = components;
+	}
+
 	public String getWord() {
 		return word;
 	}
@@ -37,6 +50,12 @@ public class CharacterDecompositionDO {
 
 	public void setComponents(LinkedList<CharacterDecompositionDO> components) {
 		this.components = components;
+	}
+
+	@Override
+	public String toString() {
+		return "CharacterDecompositionDO [word=" + word + ", composition=" + composition + ", components=" + components
+				+ "]";
 	}
 
 }

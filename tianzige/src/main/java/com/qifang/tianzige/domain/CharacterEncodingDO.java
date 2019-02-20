@@ -90,4 +90,11 @@ public class CharacterEncodingDO {
 		this.unicode = unicode;
 	}
 
+	@Override
+	public String toString() {
+		return "CharacterEncodingDO [siJiao=" + siJiao + ", cangJie=" + cangJie + ", kangXiNo=" + kangXiNo + ", wuBi="
+				+ wuBi + ", zhengMa=" + zhengMa + ", dianMa=" + dianMa + ", quWei=" + quWei + ", penOrderNo="
+				+ penOrderNo + ", unicode=" + unicode + "]";
+	}
+
 }

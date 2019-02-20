@@ -1,5 +1,7 @@
 package com.qifang.tianzige;
 
+import java.sql.SQLException;
+
 import com.qifang.tianzige.scraping.ScrapingPianPang;
 
 /**
@@ -7,7 +9,7 @@ import com.qifang.tianzige.scraping.ScrapingPianPang;
  *
  */
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		ScrapingPianPang.start();
 	}
 }

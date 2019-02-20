@@ -9,11 +9,19 @@ package com.qifang.tianzige.domain;
 public class PronunciationDO {
 
 	/**普通话声调标记**/
-	private String mandarinToneMark;
+	private String	mandarinToneMark;
 	/**普通话声调数字**/
-	private String mandarinToneNumber;
+	private String	mandarinToneNumber;
 	/**广东话发音**/
-	private String jyutpingCantonese;
+	private String	jyutpingCantonese;
+
+	public PronunciationDO() {
+	}
+
+	public PronunciationDO(String mandarinToneMark, String mandarinToneNumber) {
+		this.mandarinToneMark = mandarinToneMark;
+		this.mandarinToneNumber = mandarinToneNumber;
+	}
 
 	public String getMandarinToneMark() {
 		return mandarinToneMark;
